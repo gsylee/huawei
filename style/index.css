@@ -1,0 +1,65 @@
+#wrap {
+  max-width: 100%;
+  min-width: 1200px; }
+
+#top-ad .large-ad, #top-ad .small-ad {
+  position: relative; }
+  #top-ad .large-ad img, #top-ad .small-ad img {
+    display: block;
+    position: relative;
+    width: 1920px;
+    text-align: center;
+    left: 50%;
+    margin-left: -960px; }
+  #top-ad .large-ad i, #top-ad .small-ad i {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 18%;
+    top: -12px;
+    cursor: pointer; }
+#top-ad .large-ad {
+  margin-top: 20px; }
+  #top-ad .large-ad i {
+    background: url(../img/sprite/icon1.png) no-repeat left -410px; }
+#top-ad .small-ad i {
+  top: 12px;
+  background: url(../img/sprite/icon1.png) no-repeat left -382px; }
+
+header .head-nav {
+  width: 1200px;
+  margin: 0 auto; }
+  header .head-nav nav {
+    line-height: 30px; }
+    header .head-nav nav li {
+      float: left;
+      position: relative; }
+    header .head-nav nav li:first-child a {
+      padding-right: 8px; }
+    header .head-nav nav a {
+      position: relative; }
+    header .head-nav nav li + li a {
+      padding: 0 8px; }
+      header .head-nav nav li + li a::before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 10px;
+        left: 0;
+        top: 3px;
+        background: #a4a4a4; }
+    header .head-nav nav .more-con div:first-child a {
+      margin-right: 10px; }
+      header .head-nav nav .more-con div:first-child a::after {
+        content: '';
+        position: absolute;
+        border-width: 5px 4px;
+        border-style: solid;
+        border-color: #999 transparent transparent  transparent;
+        right: -5px;
+        top: 5px; }
+      header .head-nav nav .more-con div:first-child a:hover::after {
+        border-color: transparent transparent #999 transparent;
+        top: 0; }
+
+/*# sourceMappingURL=index.css.map */

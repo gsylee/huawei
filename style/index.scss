@@ -1,0 +1,90 @@
+// 加载公用文件
+@import 'common';
+
+#wrap {
+    max-width: 100%;
+    min-width: 1200px;
+}
+#top-ad {
+    .large-ad,.small-ad {
+        position: $re;
+        img {
+            display: block;
+            position: relative;
+            width: 1920px;
+            text-align: center;
+            left: 50%;
+            margin-left: -960px;
+        }
+        i {
+            position: $ab;
+            width: 24px;
+            height: 24px;
+            right: 18%;
+            top: -12px;
+            cursor: pointer;
+        }
+    }
+    .large-ad {
+        margin-top: 20px;
+        i {
+            background: url(../img/sprite/icon1.png) no-repeat left -410px;            
+        }
+    }
+    .small-ad {
+        i {
+            top:12px;
+            background:  url(../img/sprite/icon1.png) no-repeat left -382px;
+        }
+    }
+}
+// 头部区域
+header {
+    .head-nav {
+        width: 1200px;
+        margin: 0 auto;
+        nav {
+            line-height: 30px;
+            li {
+                float: left;
+                position: relative;
+                // background: blue;
+            }
+            li:first-child a{
+                padding-right:8px;
+            }
+            a {
+                position: relative;
+                // background: red;
+            }
+            li + li a{
+                padding: 0 8px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 1px ;
+                    height: 10px;
+                    left: 0;
+                    top: 3px;
+                    background: #a4a4a4;
+                }
+            }
+            .more-con div:first-child a {
+                margin-right: 10px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    border-width: 5px 4px;
+                    border-style: solid;
+                    border-color: #999 transparent transparent  transparent;
+                    right: -5px;
+                    top: 5px;
+                }
+                &:hover::after {
+                    border-color: transparent transparent #999 transparent;
+                    top: 0;
+                }
+            }
+        }
+    }
+}

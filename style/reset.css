@@ -1,0 +1,38 @@
+/* 清除块元素的margin和padding */
+body,
+h1,h2,h3,h4,h5,h6,
+ul,ol,li,dl,dd,
+p,hr,pre,blockquote,
+form,input,fieldset,legend,button,textarea,select,th,td{margin:0;padding:0;}
+body,button,input,select,textarea{
+    font:12px/1.5 'Microsoft Yahei', helvetica, arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+em,i,address,cite{font-style:normal;}
+ul,ol{list-style:none;}
+a {text-decoration: none; color: #a4a4a4;}
+a:hover {color:#ca141d;}
+button,input,select,textarea{font-size:100%;}
+header,nav,footer,section,aside {display: block;}
+table{border-collapse: collapse;border-spacing:0;}
+img{border:0;vertical-align: top;}
+/* 浮动 */
+.left{float:left;}
+.right{float:right;}
+/* 清除浮动 */
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+    visibility: hidden;
+    overflow: hidden;
+    height:0;
+    font-size:0;
+}
+.clearfix{zoom:1;}
+
+.overflow { overflow: hidden; }
+.hide { display: none; }
+.block { display: block; }
+.in { display: inline; }
+.inline{display:inline-block;}
